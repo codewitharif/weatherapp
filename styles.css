@@ -1,0 +1,84 @@
+/* Default Light Theme */
+:root {
+  --background-color: #f4f4f4;
+  --foreground-color: #000;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  transition: background-color 0.3s, color 0.3s; /* Add smooth transition */
+}
+
+.container {
+  text-align: center;
+}
+
+.weather-container {
+  background-color: #fff;
+  text-align: left;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for Light Theme */
+
+#theme-toggle-bottom {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 20px;
+}
+
+/* Dark Theme */
+
+.dark-theme {
+  --background-color: #333;
+  --foreground-color: #fff;
+}
+
+.dark-theme body {
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+}
+
+.dark-theme .weather-container {
+  background-color: #555; /* Adjust as needed */
+}
+
+.dark-theme input,
+.dark-theme .city,
+.dark-theme button {
+  background-color: #666; /* Adjust as needed */
+  border: 1px solid #444; /* Adjust as needed */
+  color: #fff;
+}
+
+.dark-theme #theme-toggle-bottom {
+  background-color: #ccc; /* Adjust as needed */
+  color: #000;
+}
+
+input,
+.city,
+button {
+  padding: 15px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px; /* Increase the font size */
+}
